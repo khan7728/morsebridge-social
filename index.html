@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MorseBridge Social Links</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            max-width: 300px;
+            margin-bottom: 30px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            color: #000b58;
+            margin: 30px 0 20px;
+            font-size: 1.1em;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .links, .documents {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .link {
+            padding: 15px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border: 2px solid transparent;
+        }
+
+        /* Consultation Button Styling */
+        .link.consultation {
+            background-color: #ffcd39;
+            color: #000b58;
+            font-weight: 700;
+            font-size: 1.2em;
+            padding: 22px 30px;
+            margin-bottom: 30px;
+            border: 2px solid #ffcd39;
+        }
+        .link.consultation:hover {
+            background-color: #000b58;
+            color: #ffcd39;
+            border-color: #ffcd39;
+            transform: translateY(-2px);
+        }
+
+        /* Social Links Styling */
+        .link.linkedin,
+        .link.youtube,
+        .link.instagram,
+        .link.website {
+            background-color: #3d88d0;
+            color: #ffffff;
+        }
+        .link.linkedin:hover,
+        .link.youtube:hover,
+        .link.instagram:hover,
+        .link.website:hover {
+            background-color: #333c79;
+            transform: translateY(-2px);
+        }
+
+        /* Document Links Styling */
+        .document-link {
+            background-color: #333c79;
+            padding: 15px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .document-link:hover {
+            background-color: #000b58;
+            transform: translateY(-2px);
+        }
+
+        .link i, .document-link i {
+            font-size: 20px;
+        }
+
+        .divider {
+            height: 2px;
+            background-color: #f1f2f3;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="morsebridge-logo.png" alt="MorseBridge" class="logo">
+
+        <!-- Consultation Button First -->
+        <div class="section">
+            <a href="https://calendly.com/jalil-morsebridge/free-consultation" class="link consultation">
+                <i class="fas fa-calendar-check"></i>
+                Book a Consultation
+            </a>
+        </div>
+
+        <!-- Social Links Section -->
+        <div class="section">
+            <h2 class="section-title">Connect With Us</h2>
+            <div class="links">
+                <a href="https://www.linkedin.com/company/morsebridge-ventures/posts/?feedView=all" class="link linkedin">
+                    <i class="fab fa-linkedin"></i>
+                    LinkedIn
+                </a>
+                <a href="https://www.youtube.com/@foundermeetinvestor" class="link youtube">
+                    <i class="fab fa-youtube"></i>
+                    YouTube
+                </a>
+                <a href="https://www.instagram.com/morsebridgeventures/" class="link instagram">
+                    <i class="fab fa-instagram"></i>
+                    Instagram
+                </a>
+                <a href="http://www.morsebridge.com" class="link website">
+                    <i class="fas fa-globe"></i>
+                    Website
+                </a>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Resources Section -->
+        <div class="section">
+            <h2 class="section-title">Resources</h2>
+            <div class="documents">
+                <a href="documents/MVP_Validation_Checklist.pdf" class="document-link" download>
+                    <i class="fas fa-file-pdf"></i>
+                    MVP Validation Checklist
+                </a>
+                <a href="documents/MVP_Catalyst_Playbook.pdf" class="document-link" download>
+                    <i class="fas fa-file-pdf"></i>
+                    MVP Catalyst Playbook
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
